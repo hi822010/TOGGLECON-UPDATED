@@ -1,0 +1,34 @@
+local kavoUi = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local window = kavoUi.CreateLib(" LAUNCHING UI TOGGLECON HUB","BloodTheme")
+
+---Tabs
+
+local Tab1 = window:NewTab("launch")
+local Tab1Section = Tab1:NewSection("launch")
+local Tab2 = window:NewTab("discord")
+local Tab2Section = Tab2:NewSection("Discord")
+
+-- Buttons
+
+Tab1Section:NewButton("LAUNCH", "Launch", function()
+   loadstring(game:HttpGet("https://pastefy.app/gjG60nMr/raw"))()  
+end)
+
+Tab2Section:NewButton("Copy Discord", "discord", function()
+   setclipboard("my discord https://discord.com/invite/fPNb3PGy")
+end)
+
+local NotificationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))()
+local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
+
+Notification:Notify(
+    {Title = "Notification", Description = "Launch the TOGGLECON"},
+    {OutlineColor = Color3.fromRGB(500,500,50),Time = 5, Type = "image"},
+    {Image = "", ImageColor = Color3.fromRGB(255, 255, 255)}
+)
+
+Notification:Notify(
+    {Title = "Notification", Description = "Run the TOGGLECON!"},
+    {OutlineColor = Color3.fromRGB(500,500,50),Time = 10, Type = "image"},
+    {Image = "", ImageColor = Color3.fromRGB(255, 255, 255)}
+)
